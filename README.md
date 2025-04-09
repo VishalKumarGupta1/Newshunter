@@ -1,2 +1,8 @@
-# Newshunter
-Newshunter is a responsive news app built with React, allowing users to search and explore live news across multiple categories. It integrates external APIs to fetch up-to-date content and includes a “Read More” feature for full articles. A great example of using React and APIs for dynamic web apps.
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

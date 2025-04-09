@@ -1,0 +1,114 @@
+/* Footer.css */
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    /* Allows the items to wrap on smaller screens */
+}
+
+.footer-logo h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social a {
+    color: white;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.footer-social a:hover {
+    color: #0077b5;
+    /* Example hover color for social icons */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+        align-items: center;
+    }
+
+    .footer-logo h2 {
+        margin-bottom: 20px;
+    }
+
+    .footer-links ul {
+        display: flex;
+        flex-direction: column;
+        /* Stack the links vertically */
+        align-items: center;
+    }
+
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+
+    .footer-social a {
+        margin-right: 15px;
+    }
+}
+
+/* Smaller mobile screens */
+@media (max-width: 480px) {
+    .footer-logo h2 {
+        font-size: 1.5rem;
+        /* Adjust logo size on smaller screens */
+    }
+
+    .footer-links a {
+        font-size: 0.9rem;
+        /* Adjust link size for mobile */
+    }
+
+    .footer-social a {
+        font-size: 1.2rem;
+        /* Adjust icon size for mobile */
+    }
+}

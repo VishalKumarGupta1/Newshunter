@@ -1,0 +1,133 @@
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    color: white;
+    margin-left: 15px;
+    font-size: 1em;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    gap: 10px;
+}
+
+
+nav ul :hover {
+    color: #f39c12;
+}
+
+nav .Searchbar {
+    display: flex;
+    align-items: center;
+}
+
+nav .Searchbar input {
+    padding: 8px;
+    font-size: 1em;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+}
+
+nav .Searchbar button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav .Searchbar button:hover {
+    background-color: #e67e22;
+}
+
+/* Heading */
+.heading {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+/* Category Buttons */
+.categorybtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.categorybtn button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.categorybtn button:hover {
+    background-color: #2980b9;
+}
+
+.load {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .categorybtn {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .categorybtn button {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    nav {
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+    .heading {
+        font-size: 23px;
+        margin-top: 10px;
+    }
+
+    .categorybtn {
+        margin-top: 10px;
+        justify-content: center;
+        gap: 7px;
+    }
+
+}
